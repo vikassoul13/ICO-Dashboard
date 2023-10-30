@@ -1,0 +1,580 @@
+<html lang="zxx" class="js"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Fully featured and complete ICO Dashboard template for ICO backend management.">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Site Title  -->
+    <title>Soulverse</title>
+    <!-- Vendor Bundle CSS -->
+    <link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=104">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="assets/css/style.css?ver=104">
+    
+</head>
+
+<body class="page-user no-touch">
+   
+    <div class="topbar-wrap" style="padding-top: 0px;">
+        <div class="topbar is-sticky">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <ul class="topbar-nav d-lg-none">
+                        <li class="topbar-nav-item relative">
+                            <a class="toggle-nav" href="#">
+                                <div class="toggle-icon">
+                                    <span class="toggle-line"></span>
+                                    <span class="toggle-line"></span>
+                                    <span class="toggle-line"></span>
+                                    <span class="toggle-line"></span>
+                                </div>
+                            </a>
+                        </li><!-- .topbar-nav-item -->
+                    </ul><!-- .topbar-nav -->
+                    <a class="topbar-logo" href="./">
+                       <img src="images/logo-light2x.png" srcset="images/logo-light2x.png 2x" alt="logo">
+                    </a>
+                    <ul class="topbar-nav">
+                        <li class="topbar-nav-item relative">
+                            <span class="user-welcome d-none d-lg-inline-block">Welcome!</span>
+                            
+                            <a class="toggle-tigger user-thumb" href="#"><em class="ti ti-user"></em></a>
+                            <button id="connect-button">Connect Wallet</button>
+                            <div class="toggle-class dropdown-content dropdown-content-right dropdown-arrow-right user-dropdown">
+                                <div class="user-status">
+                                    <h6 class="user-status-title">Token balance</h6>
+                                    <div class="user-status-balance">12,000,000 <small>$SOULX</small></div>
+                                </div>
+                                <!-- <ul class="user-links">
+                                    <li><a href="profile.html"><i class="ti ti-id-badge"></i>My Profile</a></li>
+                                    <li><a href="#"><i class="ti ti-infinite"></i>Referral</a></li>
+                                    <li><a href="activity.html"><i class="ti ti-eye"></i>Activity</a></li>
+                                </ul> -->
+                                <ul class="user-links bg-light">
+                                    <li><a href="sign-in.html"><i class="ti ti-power-off"></i>Logout</a></li>
+                                </ul>
+                            </div>
+                        </li><!-- .topbar-nav-item -->
+                    </ul><!-- .topbar-nav -->
+                </div>
+            </div><!-- .container -->
+        </div><!-- .topbar -->
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-innr">
+                    <ul class="navbar-menu">
+                        <li><a href="index.html"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
+                        <li class="active"><a href="buy-token.html"><em class="ikon ikon-coins"></em> Buy Tokens</a></li>
+                        <li><a href="ico-distribution.html"><em class="ikon ikon-distribution"></em> ICO Distribution</a></li>
+                        <li><a href="transactions.html"><em class="ikon ikon-transactions"></em> Transactions</a></li>
+                        <!-- <li><a href="profile.html"><em class="ikon ikon-user"></em> Profile</a></li> -->
+                        
+                    </ul>
+                    <ul class="navbar-btns">
+                        
+                        <li class="d-none"><span class="badge badge-outline badge-success badge-lg"><em class="text-success ti ti-files mgr-1x"></em><span class="text-success">KYC Approved</span></span></li>
+                    </ul>
+                </div><!-- .navbar-innr -->
+            </div><!-- .container -->
+        </div><!-- .navbar -->
+    </div><!-- .topbar-wrap -->
+    
+    <div class="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="main-content col-lg-8">
+                    
+                    <div class="d-lg-none">
+                        <a href="#" data-toggle="modal" data-target="#add-wallet" class="btn btn-danger btn-xl btn-between w-100 mgb-1-5x">Add your wallet address before buy <em class="ti ti-arrow-right"></em></a>
+                        <div class="gaps-1x mgb-0-5x d-lg-none d-none d-sm-block"></div>
+                    </div>
+                    <div class="content-area card">
+                        <div class="card-innr">
+                            <div class="card-head">
+                                <span class="card-sub-title text-primary font-mid">Step 1</span>
+                                <h4 class="card-title">Choose currency and calculate $SOULX tokens price</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>You can buy our $SOULX tokens using ETH, MATIC, USDT or USD to become part of Our project.</p>
+                            </div>
+                            
+                            <div class="token-currency-choose">
+                                <div class="row guttar-15px">
+                                    <div class="col-6">
+                                        <div class="pay-option">
+                                            <input class="pay-option-check" type="radio" id="payeth" name="payOption" checked="">
+                                            <label class="pay-option-label" for="payeth">
+                                                <span class="pay-title"><em class="pay-icon cf cf-eth"></em><span class="pay-cur">ETH</span></span>
+                                                <span class="pay-amount">0.000800</span>
+                                            </label>
+                                        </div>       
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="pay-option">
+                                            <input class="pay-option-check" type="radio" id="paylte" name="payOption">
+                                            <label class="pay-option-label" for="paylte">
+                                                <span class="pay-title"><em class="pay-icon cf cf-USDT"></em><span class="pay-cur">USDT</span></span>
+                                                <span class="pay-amount">0.001201</span>
+                                            </label>
+                                        </div>       
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="pay-option">
+                                            <input class="pay-option-check" type="radio" id="payMATIC" name="payOption">
+                                            <label class="pay-option-label" for="payMATIC">
+                                                <span class="pay-title"><em class="pay-icon cf cf-MATIC"></em><span class="pay-cur">MATIC</span></span>
+                                                <span class="pay-amount">0.000015</span>
+                                            </label>
+                                        </div>       
+                                    </div>
+                                    <!-- <div class="col-6">
+                                        <div class="pay-option">
+                                            <input class="pay-option-check" type="radio" id="payusd" name="payOption">
+                                            <label class="pay-option-label" for="payusd">
+                                                <span class="pay-title"><em class="pay-icon fas fa-dollar-sign"></em><span class="pay-cur">USD</span></span>
+                                                <span class="pay-amount">0.25</span>
+                                            </label>
+                                        </div>        -->
+                                    </div>
+                                </div><!-- .row -->
+                            </div>
+                            <div class="card-head">
+                                <span class="card-sub-title text-primary font-mid">Step 2</span>
+                                <h4 class="card-title">Amount of contribute</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Enter your amount, you would like to contribute and calculate the amount of token you will received. The calculator helps to convert required currency to tokens.</p>
+                            </div>
+                            <div class="token-contribute">
+                                <div class="token-calc">
+                                    <div class="token-pay-amount">
+                                        <input id="token-base-amount" class="input-bordered input-with-hint" type="text" value="1">
+
+                                        <div class="token-pay-currency">
+                                           <span class="input-hint input-hint-sap">ETH</span>
+                                        </div>
+                                    </div>
+                                    <div class="token-received">
+                                        <div class="token-eq-sign">=</div>
+                                        <div class="token-received-amount">
+                                            <h5 class="token-amount">123,500.84</h5>
+                                            <div class="token-symbol">$SOULX</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="token-calc-note note note-plane">
+                                    <em class="fas fa-times-circle text-danger"></em>
+                                    <span class="note-text text-light">0.35 ETH minimum contribution require.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="card-head">
+                                <span class="card-sub-title text-primary font-mid">Step 3</span>
+                                <h4 class="card-title">Make a payment</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>To get tokens please make a payment. You can send payment directly to our address or you may pay online. Once you paid, you will receive an email about the successfull deposit. </p>
+                            </div>
+                            <div class="pay-buttons">
+                                <div class="pay-button"><a href="#" data-toggle="modal" data-target="#get-pay-address" class="btn btn-light-alt btn-between w-100">Get Address for Payment <em class="ti ti-wallet"></em></a></div>
+                                
+                                
+                            </div>
+                            <div class="pay-notes">
+                                <div class="note note-plane note-light note-md font-italic">
+                                    <em class="fas fa-info-circle"></em>
+                                    <p>Tokens will appear in your account after payment successfully made and approved by our team. <br class="d-none d-lg-block"> Please note that, $SOULX tokens will distributed end of ICO Token Sales. </p>
+                                </div>
+                            </div>
+                        </div> <!-- .card-innr -->
+                    </div> <!-- .content-area -->
+                    
+                </div><!-- .col -->
+                <div class="aside sidebar-right col-lg-4">
+                    <div class="d-none d-lg-block">
+                        <a href="#" data-toggle="modal" data-target="#add-wallet" class="btn btn-danger btn-xl btn-between w-100">Add your wallet address before buy <em class="ti ti-arrow-right"></em></a>
+                        <div class="gaps-3x"></div>
+                    </div>
+                    <div class="token-statistics card card-token height-auto">
+                        <div class="card-innr">
+                            <div class="token-balance">
+                                <div class="token-balance-text">
+                                    <h6 class="card-sub-title">Tokens Balance</h6>
+                                    <span class="lead">120,000,000 <span>$SOULX</span></span>
+                                </div>
+                            </div>
+                            <div class="token-balance token-balance-s2">
+                                <h6 class="card-sub-title">Your Contribution</h6>
+                                <ul class="token-balance-list">
+                                    <li class="token-balance-sub">
+                                        <span class="lead">2.646</span>
+                                        <span class="sub">ETH</span>
+                                    </li>
+                                    <li class="token-balance-sub">
+                                        <span class="lead">1.265</span>
+                                        <span class="sub">MATIC</span>
+                                    </li>
+                                    <li class="token-balance-sub">
+                                        <span class="lead">6.506</span>
+                                        <span class="sub">USDT</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="token-sales card">
+                        <div class="card-innr">
+                            <div class="card-head">
+                                <h5 class="card-title card-title-sm">Pre-Sale Token Sales</h5>
+                            </div>
+                            <div class="token-rate-wrap row">
+                                <div class="token-rate col-md-6 col-lg-12">
+                                    <span class="card-sub-title">$SOULX Token Price</span>
+                                    <h4 class="font-mid text-dark">1 ETH = <span>12500 $SOULX</span></h4>
+                                </div>
+                                <div class="token-rate col-md-6 col-lg-12">
+                                    <span class="card-sub-title">Exchange Rate</span>
+                                    <span>1 ETH = 196.98 USD = 0.032 MATIC</span>
+                                </div>
+                            </div>
+                            <div class="token-bonus-current">
+                                <!-- <div class="fake-class">
+                                    <span class="card-sub-title">Current Bonus</span>
+                                    <div class="h3 mb-0">20 %</div>
+                                </div> -->
+                                <div class="token-bonus-date">End at <br> 10 Jan, 2019</div>
+                            </div>
+                        </div>
+                        <div class="sap"></div>
+                        <div class="card-innr">
+                            <div class="card-head">
+                                <h5 class="card-title card-title-sm">Token Sales Progress</h5>
+                            </div>
+                            <ul class="progress-info">
+                                <li><span>Raised</span> 2,758 $SOULX</li>
+                                <li class="text-right"><span>TOTAL</span> 1,500,000 $SOULX</li>
+                            </ul>
+                            <div class="progress-bar">
+                                <div class="progress-hcap" data-percent="83" style="width: 83%;">
+                                    <div>Hard cap <span>1,400,000</span></div>
+                                </div>
+                                <div class="progress-scap" data-percent="24" style="width: 24%;">
+                                    <div>Soft cap <span>40,000</span></div>
+                                </div>
+                                <div class="progress-percent" data-percent="28" style="width: 28%;"></div>
+                            </div>
+                            
+                            <span class="card-sub-title mgb-0-5x">Sales END IN</span>
+                            <div class="countdown-clock" data-date="2019/02/05"></div>
+                        </div>
+                        
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .container -->
+        </div><!-- .container -->
+    </div><!-- .page-content -->
+    
+    <div class="footer-bar">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-8">
+                    <ul class="footer-links">
+                        <li><a href="#">Whitepaper</a></li>
+                        <li><a href="faq-page.html">FAQs</a></li>
+                        <li><a href="regular-page.html">Privacy Policy</a></li>
+                        <li><a href="regular-page.html">Terms of Condition</a></li>
+                    </ul>
+                </div><!-- .col -->
+                <div class="col-md-4 mt-2 mt-sm-0">
+                    <div class="d-flex justify-content-between justify-content-md-end align-items-center guttar-25px pdt-0-5x pdb-0-5x">
+                        <div class="copyright-text">© 2018 SoulCoin.</div>
+                        <div class="lang-switch relative">
+                            <a href="#" class="lang-switch-btn toggle-tigger">En <em class="ti ti-angle-up"></em></a>
+                            <div class="toggle-class dropdown-content dropdown-content-up">
+                                <ul class="lang-list">
+                                    <li><a href="#">Fr</a></li>
+                                    <li><a href="#">Bn</a></li>
+                                    <li><a href="#">Lt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .footer-bar -->
+    
+    
+    <div class="modal fade" id="add-wallet" tabindex="-1">
+        <div class="modal-dialog modal-dialog-md modal-dialog-centered">
+            <div class="modal-content">
+                <a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+                <div class="popup-body">
+                    <h4 class="popup-title">Wallet Address</h4>
+                    <p>In order to receive your <a href="#"><strong>$SOULX Tokens</strong></a>, please select your wallet address and you have to put the address below input box. <strong>You will receive $SOULX tokens to this address after the Token Sale end.</strong></p>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-item input-with-label">
+                                    <label for="swalllet" class="input-item-label">Select Wallet </label>
+                                    <select class="select-bordered select-block select2-hidden-accessible" name="swalllet" id="swalllet" tabindex="-1" aria-hidden="true">
+                                        <option value="eth">Ethereum</option>
+                                        <option value="dac">DashCoin</option>
+                                        <option value="bic">BitCoin</option>
+                                    </select><span class="select2 select2-container select2-container--flat bordered" dir="ltr" style="width: 1px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-labelledby="select2-swalllet-container"><span class="select2-selection__rendered" id="select2-swalllet-container" title="Ethereum">Ethereum</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--flat bordered" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-swalllet-container"><span class="select2-selection__rendered" id="select2-swalllet-container" title="Ethereum">Ethereum</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                </div><!-- .input-item -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                        <div class="input-item input-with-label">
+                            <label for="token-address" class="input-item-label">Your Address for tokens:</label>
+                            <input class="input-bordered" type="text" id="token-address" name="token-address" value="0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae">
+                            <span class="input-note">Note: Address should be ERC20-compliant.</span>
+                        </div><!-- .input-item -->
+                        <div class="note note-plane note-danger">
+                            <em class="fas fa-info-circle"></em>
+                            <p>DO NOT USE your exchange wallet address such as Kraken, Bitfinex, Bithumb, Binance etc. You can use MetaMask, MayEtherWallet, Mist wallets etc. Do not use the address if you don’t have a private key of the your address. You WILL NOT receive $SOULX Tokens and WILL LOSE YOUR FUNDS if you do.</p>
+                        </div>
+                        <div class="gaps-3x"></div>
+                        <div class="d-sm-flex justify-content-between align-items-center">
+                            <button class="btn btn-primary">Add Wallet</button>
+                            <div class="gaps-2x d-sm-none"></div>
+                            <span class="text-success"><em class="ti ti-check-box"></em> Added wallet address</span>
+                        </div>
+                    </form><!-- form -->
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+
+    
+    <div class="modal fade" id="get-pay-address" tabindex="-1">
+        <div class="modal-dialog modal-dialog-md modal-dialog-centered">
+            <div class="modal-content">
+                <a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+                <div class="popup-body">
+                    <h4 class="popup-title">Payment Address for Deposit</h4>
+                    <p>Please make deposit amount of <strong>1.0 ETH</strong> to our address and receive <strong>18,750 $SOULX</strong> tokens including <strong>bonus 1,540 $SOULX</strong> once we recevied payment.</p>
+                    <div class="gaps-1x"></div>
+                    <h6 class="font-bold">Payment to the following Address</h6>
+                    <div class="copy-wrap mgb-0-5x">
+                        <span class="copy-feedback"></span>
+                        <em class="fab fa-ethereum"></em>
+                        <input type="text" class="copy-address" value="0x4156d3342d5c385a87d264f90653733592000581" disabled="">
+                        <button class="copy-trigger copy-clipboard" data-clipboard-text="0x4156d3342d5c385a87d264f90653733592000581"><em class="ti ti-files"></em></button>
+                    </div><!-- .copy-wrap -->
+                    <ul class="pay-info-list row">
+                        <li class="col-sm-6"><span>SET GAS LIMIT:</span> 120 000</li>
+                        <li class="col-sm-6"><span>SET GAS PRICE:</span> 95 Gwei</li>
+                    </ul><!-- .pay-info-list -->
+                    <div class="pdb-2-5x pdt-1-5x">
+                        <input type="checkbox" class="input-checkbox input-checkbox-md" id="agree-term">
+                        <label for="agree-term">I hereby agree to the <strong>token purchase aggrement &amp; token sale term</strong>.</label>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#pay-confirm">Buy Tokens Now  <em class="ti ti-arrow-right mgl-4-5x"></em></button>
+                    <div class="gaps-3x"></div>
+                    <div class="note note-plane note-light mgb-1x">
+                        <em class="fas fa-info-circle"></em>
+                        <p>Do not make payment through exchange (Kraken, Bitfinex). You can use MayEtherWallet, MetaMask, Mist wallets etc.</p>
+                    </div>
+                    <div class="note note-plane note-danger">
+                        <em class="fas fa-info-circle"></em>
+                        <p>In case you send a different amount, number of $SOULX tokens will update accordingly.</p>
+                    </div>
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+    
+    
+    <div class="modal fade" id="pay-confirm" tabindex="-1">
+        <div class="modal-dialog modal-dialog-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="popup-body">
+                    <h4 class="popup-title">Confirmation Your Payment</h4>
+                    <p class="lead text-primary">Your Order no. <strong>TNX93KR8N0</strong> has been placed successfully. </p>
+                    <p>The tokens balance will appear in your account only after you transaction gets 6 confirmations and approved our team.</p>
+                    <p>To <strong>speed up verifcation</strong> proccesing please enter <strong>your wallet address</strong> from where you’ll transferring your ethereum to our address.</p>
+                    <div class="input-item input-with-label">
+                        <label for="token-address" class="input-item-label">Enter your wallet address</label>
+                        <input class="input-bordered" type="text" value="0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae">
+                    </div><!-- .input-item -->
+                    <ul class="d-flex flex-wrap align-items-center guttar-30px">
+                        <li><a href="#" data-dismiss="modal" data-toggle="modal" data-target="#pay-review" class="btn btn-primary">Confirm Payment</a></li>
+                        <li class="pdt-1x pdb-1x"><a href="#" data-dismiss="modal" data-toggle="modal" data-target="#pay-online" class="link link-primary">Make Online Payment</a></li>
+                    </ul>
+                    <div class="gaps-2x"></div>
+                    <div class="gaps-1x d-none d-sm-block"></div>
+                    <div class="note note-plane note-light mgb-1x">
+                        <em class="fas fa-info-circle"></em>
+                        <p>Do not make payment through exchange (Kraken, Bitfinex). You can use MayEtherWallet, MetaMask, Mist wallets etc.</p>
+                    </div>
+                    <div class="note note-plane note-danger">
+                        <em class="fas fa-info-circle"></em>
+                        <p>In case you send a different amount, number of $SOULX tokens will update accordingly.</p>
+                    </div>
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+    
+    
+    <div class="modal fade" id="pay-online" tabindex="-1">
+        <div class="modal-dialog modal-dialog-md modal-dialog-centered">
+            <div class="modal-content pb-0">
+                <div class="popup-body">
+                    <h4 class="popup-title">Buy Tokens and Payment</h4>
+                    <p class="lead">To receiving <strong>18,750 $SOULX</strong> tokens including <strong>bonus 1,540 $SOULX</strong> require payment amount of <strong>1.0 ETH</strong>.</p>
+                    <p>You can choose any of following payment method to make your payment. The tokens balance will appear in your account after successfull payment.</p>
+                    <h5 class="mgt-1-5x font-mid">Select payment method:</h5>
+                    <ul class="pay-list guttar-20px">
+                        <li class="pay-item">
+                            <input type="radio" class="pay-check" name="pay-option" id="pay-coin">
+                            <label class="pay-check-label" for="pay-coin"><img src="images/pay-a.png" alt="pay-logo"></label>
+                        </li>
+                        <li class="pay-item">
+                            <input type="radio" class="pay-check" name="pay-option" id="pay-coinpay">
+                            <label class="pay-check-label" for="pay-coinpay"><img src="images/pay-b.png" alt="pay-logo"></label>
+                        </li>
+                        <li class="pay-item">
+                            <input type="radio" class="pay-check" name="pay-option" id="pay-paypal">
+                            <label class="pay-check-label" for="pay-paypal"><img src="images/pay-c.png" alt="pay-logo"></label>
+                        </li>
+                    </ul>
+                    <span class="text-light font-italic mgb-2x"><small>* Payment gateway company may charge you a processing fees.</small></span>
+                    <div class="pdb-2-5x pdt-1-5x">
+                        <input type="checkbox" class="input-checkbox input-checkbox-md" id="agree-term-3">
+                        <label for="agree-term-3">I hereby agree to the <strong>token purchase aggrement &amp; token sale term</strong>.</label>
+                    </div>
+                    <ul class="d-flex flex-wrap align-items-center guttar-30px">
+                        <li><a href="#" data-dismiss="modal" data-toggle="modal" data-target="#pay-review" class="btn btn-primary">Buy Tokens &amp; Process to Pay <em class="ti ti-arrow-right mgl-2x"></em></a></li>
+                        <li class="pdt-1x pdb-1x"><a href="#" data-dismiss="modal" data-toggle="modal" data-target="#get-pay-address" class="link link-primary">Make Manual Payment</a></li>
+                    </ul>
+                    <div class="gaps-2x"></div>
+                    <div class="gaps-1x d-none d-sm-block"></div>
+                    <div class="note note-plane note-light mgb-1x">
+                        <em class="fas fa-info-circle"></em>
+                        <p class="text-light">You will automatically redirect for payment after your order placing.</p>
+                    </div>
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+    
+    
+    <div class="modal fade" id="pay-coingate" tabindex="-1">
+        <div class="modal-dialog modal-dialog-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="popup-body">
+                    <h4 class="popup-title">Buy Tokens and Payment</h4>
+                    <p class="lead">To receiving <strong>18,750 $SOULX</strong> tokens including <strong>bonus 1,540 $SOULX</strong> require payment amount of <strong>1.0 ETH</strong>.</p>
+                    <p>You can pay via online payment geteway <strong>“Coingate”</strong>. It’s safe and secure.</p>
+                    <div class="pdb-2-5x pdt-1-5x">
+                        <input type="checkbox" class="input-checkbox input-checkbox-md" id="agree-term-2">
+                        <label for="agree-term-2">I hereby agree to the <strong>token purchase aggrement &amp; token sale term</strong>.</label>
+                    </div>
+                    <button class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#pay-thanks">Place Order &amp; Process to Pay  <em class="ti ti-arrow-right mgl-4-5x"></em></button>
+                    <div class="gaps-3x"></div>
+                    <div class="note note-plane note-light mgb-1x">
+                        <em class="fas fa-info-circle"></em>
+                        <p>You will automatically redirect to Coingate website for payment</p>
+                    </div>
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+    
+    
+    <div class="modal fade" id="pay-thanks" tabindex="-1">
+        <div class="modal-dialog modal-dialog-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="popup-body text-center">
+                    <div class="gaps-2x"></div>
+                    <div class="pay-status pay-status-success">
+                        <em class="ti ti-check"></em>
+                    </div>
+                    <div class="gaps-2x"></div>
+                    <h3>Thanks for your contribution!</h3>
+                    <p>Your payment amount <strong>1.0 ETH</strong> has been successfully received againest order no. <strong>TNX94KR8N0</strong>. We’ve added <strong>18,750 $SOULX</strong> tokens in account.</p>
+                    <div class="gaps-2x"></div>
+                    <a href="ico-distribution.html" class="btn btn-primary">See Token Balance</a>
+                    <div class="gaps-1x"></div>
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+    
+    
+    <div class="modal fade" id="pay-review" tabindex="-1">
+        <div class="modal-dialog modal-dialog-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="popup-body text-center">
+                    <div class="gaps-2x"></div>
+                    <div class="pay-status pay-status-success">
+                        <em class="ti ti-check"></em>
+                    </div>
+                    <div class="gaps-2x"></div>
+                    <h3>We’re reviewing your payment.</h3>
+                    <p>We’ll review your transaction and get back to your within 6 hours. You’ll receive an email with the details of your contribution.</p>
+                    <div class="gaps-2x"></div>
+                    <a href="transactions.html" class="btn btn-primary">View Transaction</a>
+                    <div class="gaps-1x"></div>
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+    
+    
+    <div class="modal fade" id="pay-failed" tabindex="-1">
+        <div class="modal-dialog modal-dialog-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="popup-body text-center">
+                    <div class="gaps-2x"></div>
+                    <div class="pay-status pay-status-error">
+                        <em class="ti ti-alert"></em>
+                    </div>
+                    <div class="gaps-2x"></div>
+                    <h3>Oops! Payment failed!</h3>
+                    <p>Sorry, seems there is an issues occurred and we couldn’t process your payment. If you continue to have issues, please contact us with order no. <strong>TNX94KR8N0</strong>.</p>
+                    <div class="gaps-2x"></div>
+                    <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#get-pay-address" class="btn btn-primary">Try to Pay Again</a>
+                    <div class="gaps-1x"></div>
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+    
+
+    <!-- JavaScript (include all script here) -->
+    <script src="assets/js/jquery.bundle.js?ver=104"></script>
+    <script src="assets/js/script.js?ver=104"></script>
+    <script>
+        document.getElementById('connect-button').addEventListener('click', event => {
+            let account;
+            let button = event.target;
+            ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
+                account = accounts[0];
+                const shortenedAddress = account.substring(0, 6) + "..." + account.substring(account.length - 4);
+                console.log(shortenedAddress);
+                button.textContent = shortenedAddress;
+
+                ethereum.request({ method: 'eth_getBalance', params: [account, 'latest'] }).then(result => {
+                    console.log(result);
+                    let wei = parseInt(result, 16);
+                    let balance = wei / (10 ** 18);
+                    console.log(balance + " ETH");
+                });
+            });
+        });
+    </script>
+
+
+</body></html>

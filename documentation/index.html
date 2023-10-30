@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Softnio">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="TokenWiz is a modern and clean admin template for ICO Dashboard.">
+	<!-- Fav Icon  -->
+	<link rel="shortcut icon" href="images/favicon.png">
+	<!-- Site Title  -->
+	<title>Documentation | TokenWiz - ICO User Dashboard Admin Template</title>
+	<!-- Vendor Bundle CSS -->
+	<link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=100">
+	<link rel="stylesheet" href="assets/css/prettify.css">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="assets/css/style.css?ver=100">
+
+	<style>
+        .section{
+            padding: 20px 0 0;
+        }
+        a{
+            color: #304073;
+        }
+        a:hover,a:focus,a:active{
+            color: #2b56f5;
+        }
+        h1,h2,h3,h4,h5,h6,p.lead{
+            color: #304073;
+            margin-bottom: 8px;
+        }
+        p,span{
+            color: #6783b8;
+        }
+        .doc-topbar{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+            padding: 10px 0;
+            background: #fff;
+            box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.02);
+        }
+        .doc-logo{
+            height: 40px;
+            display: block;
+        }
+        .doc-logo img{
+            height: 40px;
+        }
+        .doc-topbar-info ul{}
+        .doc-topbar-info ul li{
+            font-size: 13px;
+        }
+        .doc-sidebar{
+            position: fixed;
+            top: 0;
+            width: 260px;
+            border-radius: 4px;
+            padding: 15px 0;
+            margin-top: 90px;
+            background: #fff;
+            max-height: calc(100vh - 120px);
+            box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.07);
+        }
+        .doc-sidebar-head{
+            color: #304073;
+            margin:15px 0 5px;
+            padding: 0 20px;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .doc-sidebar-nav{
+            padding: 0 20px;
+        }
+        .doc-sidebar-nav li{
+            padding: 5px 0;
+        }
+        .doc-sidebar-nav li a{
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.01em;
+            font-weight: 400;
+            color: #6783b8;
+            display: block;
+        }
+        .doc-sidebar-nav li a:hover,.doc-sidebar-nav li a:focus,.doc-sidebar-nav li a:active,.doc-sidebar-nav li.active a{
+            color: #2b56f5;
+        }
+        .doc-content{
+            margin-left: 310px;
+        }
+        .doc-content{
+        }
+        .doc-file-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .doc-file-list li{
+            font-weight: 400;
+            width: 33.33%;
+        }
+        ol li{
+            list-style: decimal;
+        }
+        .doc-ol li{
+            list-style-position: inside;
+            font-weight: 400;
+        }
+        .lang-html,.lang-css,.lang-js{
+            overflow-x: hidden;
+        }
+    </style>
+	
+</head>
+
+<body class="admin-dashboard-demo">
+    
+    <div class="doc-topbar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="div">
+                    <a class="doc-logo" href="./"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="doc-topbar-info d-none d-md-block">
+                    <ul class="d-flex guttar-15px align-items-center">
+                        <li>Version: <strong>1.0.4</strong></li>
+                        <li>Updated: 03/13/2019</li>
+                        <li>By: <a href="https://softnio.com" target="_blank">Softnio</a></li>
+                        <li><a target="_blank" href="http://demo.themenio.com/tokenwiz/" class="btn btn-sm btn-primary">Demo Preview</a></li>
+                    </ul>
+                </div>
+                <div class="d-md-none">
+                    <a href="#" class="doc-menu-toggler"><em class="ti ti-align-right"></em></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="docSidebar" class="doc-sidebar">
+            <div>
+                <ul class="doc-sidebar-nav">
+                    <li><a class="to-section" href="#introduction">Introduction</a></li>
+                    <li><a class="to-section" href="#getStarted">Geting Started</a></li>
+                    <li><a class="to-section" href="#htmlStructure">HTML Files &amp; Structure</a></li>
+                    <li><a class="to-section" href="#cssStructure">CSS Files &amp; Structure</a></li>
+                    <li><a class="to-section" href="#jsStructure">JavaScript Files &amp; Structure</a></li>
+                </ul>
+                <h5 class="doc-sidebar-head">Elements</h5>
+                <ul class="doc-sidebar-nav">
+                    <li><a class="to-section" href="#buttons">Buttons</a></li>
+                    <li><a class="to-section" href="#typography">Typography</a></li>
+                    <li><a class="to-section" href="#utility">Utility Classes</a></li>
+                    <li><a class="to-section" href="#tables">Tables</a></li>
+                    <li><a class="to-section" href="#modals">Modal</a></li>
+                    <li><a class="to-section" href="#alerts">Alert</a></li>
+                    <li><a class="to-section" href="#tabsAcc">Tabs &amp; Accordions</a></li>
+                    <li><a class="to-section" href="#form">Form Styles</a></li>
+                </ul>
+                <ul class="doc-sidebar-nav">
+                    <li><a class="to-section" href="#credits">Sources and Credits</a></li>
+                    <li><a href="changeslog.html">Changes Log</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="doc-content">
+            <div id="introduction" class="section" style="padding-top: 110px">
+                <h3>TokenWiz - ICO User Dashboard Admin Template</h3>
+                <ul class="d-flex guttar-20px align-items-center d-md-none">
+					<li>Version: <strong>1.0.4</strong></li>
+					<li>Updated: 03/13/2019</li>
+					<li>By: <a href="https://softnio.com" target="_blank">Softnio</a></li>
+                </ul>
+                <div class="gaps-1x"></div>
+                <p class="lead">A powerful admin template for ICO Dashboard with all kind of components, features, pre-build pages such as Purchase Tokens, Profile, KYC Form, KYC Lists, User Lists, Transaction Lists and many more.</p>
+                <p>TokenWiz is based on Bootstrap 4, So it give you more flexible for customize. All files are clearly organised we believe it will be easy to use and edit them. Any one can customize this template as there wishes.</p>
+                <div class="gaps-2x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-innr pdt-2x pdb-1-5x">
+                        <p class="lead">If you have any questions that are beyond the scope of this help file, please feel free to email via our <a target="_blank" href="https://themeforest.net/user/softnio#contact">user profile</a> page contact form here. Thanks so much!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End #introduction -->
+            
+            <div id="getStarted" class="section">
+                <h2>Geting Started</h2>
+                <p>In our package folder you will see a file called <code> _blank.html,</code> Just duplicate this page and start adding your content.</p>
+                <p>Please check our elements page for styled html elements and pre-build components. Also all shorts of pages designed specily for ico management system, you can also start with pre-build pages and edit them as you see fit.</p>
+                <div class="gaps-1x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-innr pdt-2x pdb-2x">
+                        <p class="text-danger"><strong>Before editing any file please keep a copy of that file for referance.</strong></p>
+                    </div>
+                </div>
+            </div>
+            <!-- End #getStarted -->
+            
+            <div id="htmlStructure" class="section">
+                <h2>HTML Files &amp; Structure</h2>
+                
+                <h5>V 1.0.0</h5>
+                <ul class="doc-file-list">
+                    <li>index.html</li>
+                    <li>buy-token.html</li>
+                    <li>ico-distribution.html</li>
+                    <li>kyc-application.html</li>
+                    <li>kyc-form.html</li>
+                    <li>kyc-list.html</li>
+                    <li>kyc-thank-you.html</li>
+                    <li>profile.html</li>
+                    <li>user-list.html</li>
+                    <li>transactions.html</li>
+                    <li>admin-transactions.html</li>
+                    <li>transaction-details.html</li>
+                    <li>sign-in.html</li>
+                    <li>sign-up.html</li>
+                    <li>forgot.html</li>
+                    <li>404-error.html</li>
+                    <li>faq-page.html</li>
+                    <li>regular-page.html</li>
+                    <li>elements.html</li>
+                    <li>_blank.html</li>
+                </ul>
+                <div class="gaps-1x"></div>
+                <h5>V 1.0.2</h5>
+                <ul class="doc-file-list">
+                    <li>buy-token-s2.html</li>
+                    <li>kyc-details.html</li>
+                    <li>user-details.html</li>
+                    <li>regular-page-v2.html</li>
+                    <li>email-templates.html</li>
+                    <li>email-verified.html</li>
+                    <li>signup-success.html</li>
+                    <li>buttons.html</li>
+                    <li>badges.html</li>
+                    <li>accordions.html</li>
+                    <li>alert.html</li>
+                    <li>alert-toastr.html</li>
+                    <li>form-elements.html</li>
+                    <li>form-layout.html</li>
+                    <li>modals.html</li>
+                    <li>tabs.html</li>
+                </ul>
+                <div class="gaps-1x"></div>
+                <h5>V 1.0.3</h5>
+                <ul class="doc-file-list">
+                    <li>cards.html</li>
+                    <li>alert-sweat.html</li>
+                    <li>thank-you.html</li>
+                    <li>form-validation.html</li>
+                    <li>form-wizard.html</li>
+                </ul>
+                <div class="gaps-1x"></div>
+                <h5>V 1.0.4</h5>
+                <ul class="doc-file-list">
+                    <li>index-v2.html</li>
+                    <li>chat.html</li>
+                    <li>timeline.html</li>
+                    <li>activity.html</li>
+                    <li>user-list-sidebar.html</li>
+                </ul>
+                <div class="gaps-3x"></div>
+                <pre class="prettyprint lang-html linenums">            
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zxx&quot; class=&quot;js&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Softnio&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Fully featured and complete ICO Dashboard template for ICO backend management.&quot;&gt;
+    &lt;!-- Fav Icon&nbsp; --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;images/favicon.png&quot;&gt;
+    &lt;!-- Site Title&nbsp; --&gt;
+    &lt;title&gt;TokenWiz - ICO User Dashboard Admin Template&lt;/title&gt;
+    &lt;!-- Vendor Bundle CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/vendor.bundle.css?ver=100&quot;&gt;
+    &lt;!-- Custom styles for this template --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/style.css?ver=100&quot;&gt;
+&lt;/head&gt;
+&lt;body class=&quot;page-user&quot;&gt;
+&nbsp; &nbsp; &lt;div class=&quot;topbar-wrap&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;topbar is-sticky&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;&lt;!-- .topbar --&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;navbar&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;&lt;!-- .menubar --&gt;
+&nbsp; &nbsp; &lt;/div&gt;&lt;!-- .topbar-wrap --&gt;
+&nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; &lt;div class=&quot;page-content&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;container&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;&lt;!-- .card --&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;&lt;!-- .container --&gt;
+&nbsp; &nbsp; &lt;/div&gt;&lt;!-- .page-content --&gt;
+&nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; &lt;div class=&quot;footer-bar&quot;&gt;
+&nbsp; &nbsp; &lt;/div&gt;&lt;!-- .footer-bar --&gt;
+&nbsp;
+&lt;!-- JavaScript (include all script here) --&gt;
+&lt;script src=&quot;assets/js/jquery.bundle.js?ver=100&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/js/script.js?ver=100&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+
+            </div>
+            <!-- End #htmlStructure -->
+            
+            <div id="cssStructure" class="section">
+                <h2>CSS Files &amp; Structure</h2>
+                <p>All CSS are located in the "assets/css" folder of the template. Each CSS File is well commented and easy to use and customize to your own needs. Here's the list of the CSS files:</p>
+                <h5><strong>Third-Party Vendor</strong></h5>
+                <ol class="doc-ol">
+                    <li>bootstrap.min.css</li>
+                    <li>font-awesome.min.css</li>
+                    <li>themify-icons.css</li>
+                    <li>datatables.min.css</li>
+                    <li>magnific-popup.css</li>
+                    <li>select2.min.css</li>
+                    <li>jquery.timepicker.min.css</li>
+                    <li>bootstrap-datepicker.min.css</li>
+                </ol>
+                <h5><strong>Used Files</strong></h5>
+                <ol class="doc-ol">
+                    <li>vendor.bundle.css</li>
+                    <li>style.css</li>
+                </ol>
+                
+                <h5 id="color-preset"><strong>Color Preset <small>(Added in @v101)</small></strong></h5>
+                <ol class="doc-ol">
+                    <li>style-violet.css</li>
+                    <li>style-charcoal.css</li>
+                    <li>style-green.css</li>
+                    <li>style-pigeon.css</li>
+                    <li>style-purple.css</li>
+                </ol>
+                <div class="gaps-3x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-innr pdt-2x pdb-2x">
+                        <p class="text-danger"><strong> To Use these presets. At first keep a backup of your main style.css Then rename your preferred stylsheet with a name of (style.css) </strong></p>
+                    </div>
+                </div>
+                <pre class="prettyprint lang-css linenums">
+/*!
+Template :<span style="white-space:pre"> </span>TokenWiz - ICO User Dashboard Admin Template
+Author<span style="white-space:pre"> </span> :<span style="white-space:pre"> </span>Softnio
+Version<span style="white-space:pre"> </span> :<span style="white-space:pre"> </span>1.0.0
+Updated<span style="white-space:pre"> </span> :<span style="white-space:pre"> </span>11.22.2018
+*/
+/*!
+&nbsp;* Table of Contents
+&nbsp;* 01.0 - Fonts
+&nbsp;* 02.0 - Reset
+&nbsp;* 03.0 - Plugins
+&nbsp;* 04.0 - Elements
+&nbsp;* 05.0 - Panels and Cards
+&nbsp;* 06.0 - Utility
+&nbsp;* 07.0 - Layout
+&nbsp;*/
+/** 01.0 Fonts */
+@font-face {
+&nbsp; font-family: &#39;Roboto&#39;;
+&nbsp; src: url(&quot;../fonts/Roboto-Bold.eot&quot;);
+&nbsp; src: local(&quot;Roboto Bold&quot;), local(&quot;Roboto-Bold&quot;), url(&quot;../fonts/Roboto-Bold.eot?#iefix&quot;) format(&quot;embedded-opentype&quot;), url(&quot;../fonts/Roboto-Bold.woff2&quot;) format(&quot;woff2&quot;), url(&quot;../fonts/Roboto-Bold.woff&quot;) format(&quot;woff&quot;), url(&quot;../fonts/Roboto-Bold.ttf&quot;) format(&quot;truetype&quot;);
+&nbsp; font-weight: bold;
+&nbsp; font-style: normal; }
+@font-face {
+&nbsp; font-family: &#39;Roboto&#39;;
+&nbsp; src: url(&quot;../fonts/Roboto-Light.eot&quot;);
+&nbsp; src: local(&quot;Roboto Light&quot;), local(&quot;Roboto-Light&quot;), url(&quot;../fonts/Roboto-Light.eot?#iefix&quot;) format(&quot;embedded-opentype&quot;), url(&quot;../fonts/Roboto-Light.woff2&quot;) format(&quot;woff2&quot;), url(&quot;../fonts/Roboto-Light.woff&quot;) format(&quot;woff&quot;), url(&quot;../fonts/Roboto-Light.ttf&quot;) format(&quot;truetype&quot;);
+&nbsp; font-weight: 300;
+&nbsp; font-style: normal; }
+/** 02.0 Reset */
+body {
+&nbsp; font-family: &quot;Roboto&quot;, sans-serif;
+&nbsp; color: #3c3c3c;
+&nbsp; font-size: 14px;
+&nbsp; line-height: 1.86;
+&nbsp; font-weight: 300;
+&nbsp; -webkit-font-smoothing: antialiased;
+&nbsp; -moz-osx-font-smoothing: grayscale;
+&nbsp; position: relative;
+&nbsp; background: #eaf3fc;
+&nbsp; min-width: 320px;
+&nbsp; color: #6783b8; }
+&nbsp;
+img {
+&nbsp; max-width: 100%; }
+&nbsp;
+h1, h2, h3, h4, h5, h6, p, ul:not([class]), ol, table {
+&nbsp; margin-bottom: 12px;
+&nbsp; line-height: 1.68; }
+&nbsp; h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child, ul:not([class]):last-child, ol:last-child, table:last-child {
+&nbsp; &nbsp; margin-bottom: 0; }
+&nbsp;
+h1, h2, h3, h4, h5, h6, label {
+&nbsp; font-family: &quot;Roboto&quot;, sans-serif;
+&nbsp; font-weight: 400; }
+&nbsp;
+h1, .h1 {
+&nbsp; font-size: 1.37em; }
+&nbsp;
+h2, .h2 {
+&nbsp; font-size: 1.3em; }
+&nbsp;
+h3, .h3 {
+&nbsp; font-size: 1.2em; }
+&nbsp;
+h4, .h4 {
+&nbsp; font-size: 1.15em; }
+&nbsp;
+h5, .h5 {
+&nbsp; font-size: 1.07em; }
+&nbsp;
+h6, .h6 {
+&nbsp; font-size: .93em; }
+&nbsp;
+p {
+&nbsp; font-size: 1em; }
+&nbsp;
+p.lead {
+&nbsp; font-size: 1.27em; }
+&nbsp;
+@media (min-width: 576px) {
+&nbsp; h1, .h1 {
+&nbsp; &nbsp; font-size: 1.714em; }
+&nbsp;
+&nbsp; h2, .h2 {
+&nbsp; &nbsp; font-size: 1.62em; }
+&nbsp;
+&nbsp; h3, .h3 {
+&nbsp; &nbsp; font-size: 1.52em; }
+&nbsp;
+&nbsp; h4, .h4 {
+&nbsp; &nbsp; font-size: 1.29em; } }
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, p span {
+&nbsp; color: #2b56f5; }
+&nbsp;
+ul, ol {
+&nbsp; padding: 0px;
+&nbsp; margin: 0px; }
+&nbsp; ul li, ol li {
+&nbsp; &nbsp; list-style: none; }
+&nbsp;
+.relative {
+&nbsp; position: relative; }
+&nbsp;
+                </pre>
+                
+            </div>
+            <!-- End #cssStructure -->
+            <div id="jsStructure" class="section">
+                <h2>JavaScript Files &amp; Structure</h2>
+                <p>All CSS are located in the "assets/css" folder of the template. Each CSS File is well commented and easy to use and customize to your own needs. Here's the list of the CSS files:</p>
+                <h5><strong>Third-Party Vendor</strong></h5>
+                <ol class="doc-ol">
+                    <li>jquery.js</li>
+                    <li>bootstrap.min.js</li>
+                    <li>jquery.easing.min.js</li>
+                    <li>jquery.countdown.min.js</li>
+                    <li>dropzone.js</li>
+                    <li>select2.full.min.js</li>
+                    <li>datatables.min.js</li>
+                    <li>bootstrap-datepicker.min.js</li>
+                    <li>jquery.timepicker.min.js</li>
+                    <li>jquery.magnific-popup.min.js</li>
+                    <li>Chart.bundle.min.js</li>
+                    <li>simplebar.min.js</li>
+                </ol>
+                <h5><strong>Used Files</strong></h5>
+                <ol class="doc-ol">
+                    <li>jquery.bundle.js</li>
+                    <li>toastr.examples.js</li>
+                    <li>sweat.examples.js</li>
+                    <li>script.js</li>
+                </ol>
+                <div class="gaps-3x"></div>
+                <pre class="prettyprint lang-js linenums">
+/* Template<span style="white-space:pre"> </span>:<span style="white-space:pre"> </span>TokenWiz - ICO Dashboard v1.0.0 */
+(function($){
+&#39;use strict&#39;;
+var $win = $(window), $body_m = $(&#39;body&#39;), $navbar = $(&#39;.navbar&#39;);
+&nbsp;
+// Touch Class
+if (!(&quot;ontouchstart&quot; in document.documentElement)) {
+$body_m.addClass(&quot;no-touch&quot;);
+}
+// Get Window Width
+function winwidth () {
+return $win.width();
+}
+var wwCurrent = winwidth();
+$win.on(&#39;resize&#39;, function () {&nbsp;
+wwCurrent = winwidth();&nbsp;
+});
+&nbsp;
+// Select
+var $select = $(&#39;.select&#39;);
+if ($select.length &gt; 0) {
+&nbsp; &nbsp;$select.each(function() {
+&nbsp; &nbsp; &nbsp; &nbsp; var $this = $(this);
+&nbsp; &nbsp; &nbsp; &nbsp; $this.select2({
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; theme: &quot;flat&quot;
+&nbsp; &nbsp; &nbsp; &nbsp; });
+&nbsp; &nbsp;});
+}
+// Tooltip
+var $tooltip = $(&#39;[data-toggle=&quot;tooltip&quot;]&#39;);
+if($tooltip.length &gt; 0){
+&nbsp; &nbsp; $tooltip.tooltip();
+}
+// Date Picker
+var $date_picker = $(&#39;.date-picker&#39;), $date_picker_dob = $(&#39;.date-picker-dob&#39;), $date_picker_range = $(&#39;.date-picker-range&#39;), $time_picker = $(&#39;.time-picker&#39;);
+if($date_picker.length &gt; 0){
+&nbsp; &nbsp; $date_picker.each(function(){
+&nbsp; &nbsp; &nbsp; &nbsp; $(this).datepicker({
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; format: &quot;mm/dd/yyyy&quot;,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maxViewMode: 2,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; clearBtn: true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; autoclose: true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; todayHighlight: true
+&nbsp; &nbsp; &nbsp; &nbsp; });
+&nbsp; &nbsp; });
+}
+// Time Picker
+if($time_picker.length &gt; 0){
+&nbsp; &nbsp; $time_picker.each(function(){
+&nbsp; &nbsp; &nbsp; &nbsp; $(this).parent().addClass(&#39;has-timepicker&#39;);
+&nbsp; &nbsp; &nbsp; &nbsp; $(this).timepicker({
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; timeFormat: &#39;HH:mm&#39;,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; interval: 15
+&nbsp; &nbsp; &nbsp; &nbsp; });
+&nbsp; &nbsp; });
+}
+})(jQuery);
+                </pre>
+            </div>
+            <!-- End #jsStructure -->
+            
+            <div id="buttons" class="section">
+                <h2>Buttons</h2>
+                <div class="gaps-1x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Button Styles</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-1-5x pdb-1-5x">
+                        <p>To make button you have to use a common class &nbsp; <code>.btn</code>  &nbsp; after that use other utility classes.</p>
+                        <div class="table-plain table-plain-4clm">
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell head">Class Name</div>
+                                <div class="table-plain-cell head">Preview</div>
+                                <div class="table-plain-cell head d-none d-lg-block">Class Name</div>
+                                <div class="table-plain-cell head d-none d-lg-block">Preview</div>
+                            </div>
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell"><code>.btn-lighter</code></div>
+                                <div class="table-plain-cell"><a href="#" class="btn btn-lighter">Lighter</a></div>
+                                <div class="table-plain-cell"><code>.btn-light</code></div>
+                                <div class="table-plain-cell"><a href="#" class="btn btn-light">Light</a></div>
+                            </div>
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell"><code>.btn-dark</code></div>
+                                <div class="table-plain-cell"><a href="#" class="btn btn-dark">Dark</a></div>
+                                <div class="table-plain-cell"><code>.btn-primary</code></div>
+                                <div class="table-plain-cell"><a href="#" class="btn btn-primary">Primary</a></div>
+                            </div>
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell"><code>.btn-secondary</code></div>
+                                <div class="table-plain-cell"><a href="#" class="btn btn-secondary">Secondary</a></div>
+                                <div class="table-plain-cell"><code>.btn-success</code></div>
+                                <div class="table-plain-cell"><a href="#" class="btn btn-success">Success</a></div>
+                            </div>
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell"><code>.btn-warning</code></div>
+                                <div class="table-plain-cell"><a href="#" class="btn btn-warning">Warning</a></div>
+                                <div class="table-plain-cell"><code>.btn-danger</code></div>
+                                <div class="table-plain-cell"><a href="#" class="btn btn-danger">Danger</a></div>
+                            </div>
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell"><code>.btn-google</code></div>
+                                <div class="table-plain-cell"><a href="#" class="btn btn-icon-text btn-google"><em class="fab fa-google"></em>Google</a></div>
+                                <div class="table-plain-cell"><code>.btn-facebook</code></div>
+                                <div class="table-plain-cell"><a href="#" class="btn btn-icon-text btn-facebook"><em class="fab fa-facebook-f"></em>Facebook</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End #buttons -->
+            <div id="typography" class="section">
+                <h2>Typography</h2>
+                <div class="gaps-1x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Headings</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-3x pdb-3x">
+                        <p>All HTML headings, <code> h1 </code> to <code> h6 </code>, are available. All headings are also available in diffrent state.</p>
+                        <p>Just add a prefix of  <code> .text- </code> with state name For <code> e.g. .text-success , .text-primary , .text-warning , .text-danger , .text-purple , .text-info </code></p>
+                        <div class="sap mgb-1x"></div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h1>Heading 1</h1>
+                                <h2>Heading 2</h2>
+                                <h3>Heading 3</h3>
+                                <h4>Heading 4</h4>
+                                <h5>Heading 5</h5>
+                                <h6>Heading 6</h6>
+                            </div>
+                            <div class="col-6">
+                                <h1 class="text-success">Heading 1</h1>
+                                <h2 class="text-primary">Heading 2</h2>
+                                <h3 class="text-warning">Heading 3</h3>
+                                <h4 class="text-danger">Heading 4</h4>
+                                <h5 class="text-purple">Heading 5</h5>
+                                <h6 class="text-info">Heading 6</h6>
+                            </div>
+                        </div>
+                        <div class="gaps-3x"></div>
+                        <p>Also there is some utility class for text. For example, use <code>.ucap</code> Class to make all text uppercase</p>
+                        <div class="sap mgb-1x"></div>
+                        <div class="row">
+                            <div class="col-6">
+                                <span><code>.ucap </code> for all uppercase text</span>
+                                <h5 class="ucap">Uppercase text</h5>
+                            </div>
+                            <div class="col-6">
+                                <span><code>.cap </code> for all uppercase text</span>
+                                <h5 class="cap">Capitalize text</h5>
+                            </div>
+                        </div>
+                        <div class="gaps-1x"></div>
+                        <div class="row">
+                            <div class="col-6">
+                                <span><code>.font-bold </code> for bold text</span>
+                                <h5 class="font-bold">bold text</h5>
+                            </div>
+                            <div class="col-6">
+                                <span><code>.font-semibold </code> for semibold text</span>
+                                <h5 class="font-semibold">semibold text</h5>
+                            </div>
+                            <div class="col-6">
+                                <span><code>.font-mid </code> for medium text</span>
+                                <h5 class="font-mid">medium text</h5>
+                            </div>
+                            <div class="col-6">
+                                <span><code>.font-light </code> for light text</span>
+                                <h5 class="font-light">light text</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Texts</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-3x pdb-1-5x">
+                        <p>Add <code> .lead </code> Class to a pargraph to satand out,</p>
+                        <p>All the state colors are also available for any kind of text.</p>
+                        <div class="sap mgb-1x"></div>
+                        <p class="lead">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+                        <div class="gaps-1x"></div>
+                        <p>Normal text with a <code> p </code> tag</p>
+                        <div class="sap mgb-1x"></div>
+                        <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+                        <div class="gaps-1x"></div>
+                        <p>Text Style with link</p>
+                        <div class="sap mgb-1x"></div>
+                        <p>One morning, when <a href="#">Gregor Samsa</a> woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+                        <div class="gaps-1x"></div>
+                        <blockquote>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</blockquote>
+                    </div>
+                </div>
+            </div>
+            <!-- End #typography -->
+            <div id="utility" class="section">
+                <h2>Utility Classes</h2>
+                <div class="gaps-1x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-innr pdt-3x pdb-3x">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                  <th>Class Name</th>
+                                  <th>CSS Code</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.pd-1x</code> to <code>.pd-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>padding: 10px;</code> to <code>padding: 200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.pdl-1x</code> to <code>.pdl-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>padding-left: 10px;</code> to <code>padding-left: 200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.pdr-1x</code> to <code>.pdr-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>padding-right: 10px;</code> to <code>padding-right: 200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.pdt-1x</code> to <code>.pdt-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>padding-top: 10px;</code> to <code>padding-top: 200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.pdb-1x</code> to <code>.pdb-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>padding-bottom: 10px;</code> to <code>padding-bottom: 200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.mg-1x</code> to <code>.mg-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>margin: 10px;</code> to <code>margin: 200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.mgl-1x</code> to <code>.mgl-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>margin-left: 10px;</code> to <code>margin-left: 200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.mgr-1x</code> to <code>.mgr-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>margin-right: 10px;</code> to <code>margin-right: 200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.mgt-1x</code> to <code>.mgt-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>margin-top: 10px;</code> to <code>margin-top: 200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.mgb-1x</code> to <code>.mgb-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>margin-bottom: 10px;</code> to <code>margin-bottom: 200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.mgml-1x</code> to <code>.mgml-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>margin-left: -10px;</code> to <code>margin-left: -200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.mgmr-1x</code> to <code>.mgmr-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>margin-right: -10px;</code> to <code>margin-right: -200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.mgmt-1x</code> to <code>.mgmt-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>margin-top: -10px;</code> to <code>margin-top: -200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.mgmb-1x</code> to <code>.mgmb-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>margin-bottom: -10px;</code> to <code>margin-bottom: -200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.gaps-1x</code> to <code>.gaps-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>height: 10px;</code> to <code>height: 200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.w-1px</code> to <code>.w-200px</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>width: 1px;</code> to <code>width: 200px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.w-1x</code> to <code>.w-20x</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>width: 50px;</code> to <code>width: 1000px;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>.w-1</code> to <code>.w-100</code>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-between">
+                                            <code>min-width: 1%;<br>max-width: 1%;</code> to <code>min-width: 100%;<br>max-width: 100%;</code>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="gaps-2x"></div>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                  <th>Class Name</th>
+                                  <th>CSS Code</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.pd-0 , .nopd</code></td>
+                                    <td><code>padding: 0px;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.npl</code></td>
+                                    <td><code>padding-left: 0px;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.npr</code></td>
+                                    <td><code>padding-right: 0px;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.overflow-hidden</code></td>
+                                    <td><code>overflow: hidden;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.overflow-x-hidden</code></td>
+                                    <td><code>overflow-x: hidden;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.overflow-x-auto</code></td>
+                                    <td><code>overflow-x: auto;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.overflow-y-hidden</code></td>
+                                    <td><code>overflow-y: hidden;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.overflow-y-auto</code></td>
+                                    <td><code>overflow-y: auto;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.wauto</code></td>
+                                    <td><code>width: auto;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hauto</code></td>
+                                    <td><code>height: auto;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.vh100</code></td>
+                                    <td><code>height: 100vh;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.height-auto</code></td>
+                                    <td><code>height: auto !important;</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.no-shadow</code></td>
+                                    <td><code>box-shadow: none !important;</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- End #utility -->
+            <div id="tables" class="section">
+                <h2>Tables</h2>
+                <div class="gaps-1x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Simple Table Style</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-2-5x pdb-3x">
+                        <p>Use <code> .table </code> class for simple table style</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>First</th>
+                              <th>Last</th>
+                              <th>Handle</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                            </tr>
+                            <tr>
+                              <th>2</th>
+                              <td>Jacob</td>
+                              <td>Thornton</td>
+                              <td>@fat</td>
+                            </tr>
+                            <tr>
+                              <th>3</th>
+                              <td>Larry</td>
+                              <td>the Bird</td>
+                              <td>@twitter</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- End #tables -->
+            <div id="modals" class="section">
+                <h2>Modals</h2>
+                <div class="gaps-1x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Modal Size</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-1-5x pdb-1-5x">
+                        <p>To define modal size. You Need to use extra class with <code>.modal-dialog</code> , For Example <code>.modal-dialog-lg</code> for large modal</p>
+                        <div class="table-plain table-plain-4clm">
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell head">Class Name</div>
+                                <div class="table-plain-cell head">Preview</div>
+                            </div>
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell"><code>.modal-dialog-sm</code></div>
+                                <div class="table-plain-cell"><a href="#" data-toggle="modal" data-target="#modalSmall"  class="btn btn-xs btn-primary">Modal Small</a></div>
+                            </div>
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell"><code>.modal-dialog-md</code></div>
+                                <div class="table-plain-cell"><a href="#" data-toggle="modal" data-target="#modalMedium" class="btn btn-sm btn-primary">Modal Medium</a></div>
+                            </div>
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell"><code>.modal-dialog-lg</code></div>
+                                <div class="table-plain-cell"><a href="#" data-toggle="modal" data-target="#modalLarge" class="btn btn-primary">Modal Large</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Modal Position</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-1-5x pdb-1-5x">
+                        <p>To define modal size. You Need to use extra class with <code>.modal-dialog</code> , For Example <code>.modal-dialog-lg</code> for large modal</p>
+                        <div class="table-plain table-plain-4clm">
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell head">Class Name</div>
+                                <div class="table-plain-cell head">Preview</div>
+                            </div>
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell"><code>.modal-dialog-bottom</code></div>
+                                <div class="table-plain-cell"><a href="#" data-toggle="modal" data-target="#modalTop" class="btn btn-sm btn-primary">Modal Top</a></div>
+                            </div>
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell"><code>.modal-dialog-bottom</code></div>
+                                <div class="table-plain-cell"><a href="#" data-toggle="modal" data-target="#modalCentered" class="btn btn-sm btn-primary">Modal Centered</a></div>
+                            </div>
+                            <div class="table-plain-row">
+                                <div class="table-plain-cell"><code>.modal-dialog-bottom</code></div>
+                                <div class="table-plain-cell"><a href="#" data-toggle="modal" data-target="#modalBottom" class="btn btn-sm btn-primary">Modal Bottom</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End #modals -->
+            <div id="alerts" class="section">
+                <h2>Alerts</h2>
+                <div class="gaps-1x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Alerts</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-2x pdb-2x">
+                        <p>Use <code> .alert </code> class on a div to create an alert element.</p>
+                        <p>For proper styling, use one of the required contextual classes <code>(e.g., .alert-success)</code></p>
+                        <div class="alert alert-primary">
+                            A simple primary alert—check it out!
+                        </div>
+                        <div class="alert alert-secondary">
+                            A simple secondary alert—check it out!
+                        </div>
+                        <div class="alert alert-success">
+                            A simple success alert—check it out!
+                        </div>
+                        <div class="alert alert-danger">
+                            A simple danger alert—check it out!
+                        </div>
+                        <div class="alert alert-warning">
+                            A simple warning alert—check it out!
+                        </div>
+                        <div class="alert alert-info">
+                            A simple info alert—check it out!
+                        </div>
+                        <div class="alert alert-light">
+                            A simple light alert—check it out!
+                        </div>
+                        <div class="alert alert-dark">
+                            A simple dark alert—check it out!
+                        </div>
+                        <p>With link</p>
+                        <div class="alert alert-info">
+                            A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                        </div>
+                        <p>For inline dismissal, use the alerts jQuery plugin.<code></code></p>
+                        <div class="alert alert-danger alert-dismissible fade show">
+                            A simple danger alert with dismissible option check it out!
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Alerts Alternet</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-2x pdb-2x">
+                        <p>Use <code> .alert </code> class on a div to create an alert element.</p>
+                        <p>For an alternet or filled styling use this contextual class <code>(e.g., .alert-success-alt)</code></p>
+                        <div class="alert alert-primary-alt">
+                            A simple primary alternet alert—check it out!
+                        </div>
+                        <div class="alert alert-secondary-alt">
+                            A simple secondary alternet alert—check it out!
+                        </div>
+                        <div class="alert alert-success-alt">
+                            A simple success alternet alert—check it out!
+                        </div>
+                        <div class="alert alert-danger-alt">
+                            A simple danger alternet alert—check it out!
+                        </div>
+                        <div class="alert alert-warning-alt">
+                            A simple warning alternet alert—check it out!
+                        </div>
+                        <div class="alert alert-info-alt">
+                            A simple info alternet alert—check it out!
+                        </div>
+                        <div class="alert alert-light-alt">
+                            A simple light alternet alert—check it out!
+                        </div>
+                        <div class="alert alert-dark-alt">
+                            A simple dark alternet alert—check it out!
+                        </div>
+                        <p>With link <code></code></p>
+                        <div class="alert alert-info-alt">
+                            A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                        </div>
+                        <p>For inline dismissal, use the alerts jQuery plugin.<code></code></p>
+                        <div class="alert alert-danger-alt alert-dismissible fade show">
+                            A simple danger alert with dismissible option check it out!
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End #alerts -->
+            <div id="tabsAcc" class="section">
+                <h2>Tabs &amp; Accordions</h2>
+                <div class="gaps-1x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Tabs Simple</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-2x pdb-2-5x">
+                        <ul class="nav nav-tabs" id="tabs-simple" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab-item-1">Tab Item 1</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-item-2">Tab Item 2</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-item-3">Tab Item 3</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="tab-item-1">
+                                <h4>Tab Content One Heading</h4>
+                                <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                            </div>
+                            <div class="tab-pane fade" id="tab-item-2">
+                                <h4>Tab Content Two Heading</h4>
+                                <p> She packed her seven versalia, put her initial into the belt and made herself on the way. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+                            </div>
+                            <div class="tab-pane fade" id="tab-item-3">
+                                <h4>Tab Content Three Heading</h4>
+                                <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <pre class="prettyprint lang-html linenums">
+&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+&nbsp; &nbsp; &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; href=&quot;#tab-item-1&quot;&gt;Tab Item 1&lt;/a&gt;&lt;/li&gt;
+&nbsp; &nbsp; &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#tab-item-2&quot;&gt;Tab Item 2&lt;/a&gt;&lt;/li&gt;
+&nbsp; &nbsp; &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#tab-item-3&quot;&gt;Tab Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+&nbsp; &nbsp; &lt;div class=&quot;tab-pane fade active show&quot; id=&quot;tab-item-1&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;Tab Content One Heading&lt;/h4&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Tab content text.&lt;/p&gt;
+&nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &lt;div class=&quot;tab-pane fade&quot; id=&quot;tab-item-2&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;Tab Content Two Heading&lt;/h4&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Tab content text.&lt;/p&gt;
+&nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &lt;div class=&quot;tab-pane fade&quot; id=&quot;tab-item-3&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;Tab Content Three Heading&lt;/h4&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Tab content text.&lt;/p&gt;
+&nbsp; &nbsp; &lt;/div&gt;
+&lt;/div&gt;</pre>
+                <div class="gaps-2x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Tabs with line</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-2x pdb-2-5x">
+                        <ul class="nav nav-tabs nav-tabs-line" id="tabs-line" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab-item-4">Tab Item 1</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-item-5">Tab Item 2</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-item-6">Tab Item 3</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="tab-item-4">
+                                <h4>Tab Content One Heading</h4>
+                                <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                            </div>
+                            <div class="tab-pane fade" id="tab-item-5">
+                                <h4>Tab Content Two Heading</h4>
+                                <p> She packed her seven versalia, put her initial into the belt and made herself on the way. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+                            </div>
+                            <div class="tab-pane fade" id="tab-item-6">
+                                <h4>Tab Content Three Heading</h4>
+                                <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-innr pdt-2x pdb-2-5x">
+                        <p>Add an extra class called <code> .nav-tabs-line </code> with <code> .nav .nav-tabs </code> class for line tab style.</p>
+                    </div>
+                </div>
+                <div class="gaps-1x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Tabs Vertical</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-3x pdb-3x">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul class="nav nav-tabs nav-tabs-vr" id="tabs-vertical" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab-item-7">Tab Item 1</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-item-8">Tab Item 2</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-item-9">Tab Item 3</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade active show" id="tab-item-7">
+                                        <h4>Tab Content One Heading</h4>
+                                        <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-item-8">
+                                        <h4>Tab Content Two Heading</h4>
+                                        <p> She packed her seven versalia, put her initial into the belt and made herself on the way. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-item-9">
+                                        <h4>Tab Content Three Heading</h4>
+                                        <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;row&quot;&gt;
+&nbsp; &nbsp; &lt;div class=&quot;col-md-4&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;ul class=&quot;nav nav-tabs nav-tabs-vr&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; href=&quot;#tab-item-1&quot;&gt;Tab Item 1&lt;/a&gt;&lt;/li&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#tab-item-2&quot;&gt;Tab Item 2&lt;/a&gt;&lt;/li&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#tab-item-3&quot;&gt;Tab Item 3&lt;/a&gt;&lt;/li&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;
+&nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &lt;div class=&quot;col-md-8&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;tab-content&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;tab-pane fade active show&quot; id=&quot;tab-item-1&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;Tab Content One Heading&lt;/h4&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Tab content text.&lt;/p&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;tab-pane fade&quot; id=&quot;tab-item-2&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;Tab Content Two Heading&lt;/h4&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Tab content text.&lt;/p&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;tab-pane fade&quot; id=&quot;tab-item-3&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h4&gt;Tab Content Three Heading&lt;/h4&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Tab content text.&lt;/p&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &lt;/div&gt;
+&lt;/div&gt;</pre>
+                <div class="gaps-2x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Tabs Vertical Line</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-3x pdb-3x">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul class="nav nav-tabs nav-tabs-line nav-tabs-vr" id="tabs-vertical-line" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab-item-10">Tab Item 1</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-item-11">Tab Item 2</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-item-12">Tab Item 3</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade active show" id="tab-item-10">
+                                        <h4>Tab Content One Heading</h4>
+                                        <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-item-11">
+                                        <h4>Tab Content Two Heading</h4>
+                                        <p> She packed her seven versalia, put her initial into the belt and made herself on the way. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-item-12">
+                                        <h4>Tab Content Three Heading</h4>
+                                        <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-innr pdt-2x pdb-2-5x">
+                        <p>Add an extra class called <code> .nav-tabs-line </code> with <code> .nav .nav-tabs .nav-tabs-vr </code> class for line tab style.</p>
+                    </div>
+                </div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Simple Accordions</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-3x pdb-2-5x">
+                        <div class="accordion" id="accordion-1">
+                            <div class="accordion-item">
+                                <h6 class="accordion-heading" data-toggle="collapse" data-target="#collapse-1-1"> What is TokenWiz?  </h6>
+                                <div id="collapse-1-1" class="collapse show" data-parent="#accordion-1">
+                                    <div class="accordion-content">
+                                        <p>TokenWiz - is unique platform; that is secure, smart and easy-to-use platform, and completely disrupting the way businesses raise capital.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .accordion-item -->
+                            <div class="accordion-item">
+                                <h6 class="accordion-heading collapsed" data-toggle="collapse" data-target="#collapse-1-2">What cryptocurrencies can I use to purchase?</h6>
+                                <div id="collapse-1-2" class="collapse" data-parent="#accordion-1">
+                                    <div class="accordion-content">
+                                        <p>TokenWiz - is unique platform; that is secure, smart and easy-to-use platform, and completely disrupting the way businesses raise capital.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .accordion-item -->
+                            <div class="accordion-item">
+                                <h6 class="accordion-heading collapsed" data-toggle="collapse" data-target="#collapse-1-3">How can I participate in the ICO Token sale?</h6>
+                                <div id="collapse-1-3" class="collapse" data-parent="#accordion-1">
+                                    <div class="accordion-content">
+                                        <p>TokenWiz - is unique platform; that is secure, smart and easy-to-use platform, and completely disrupting the way businesses raise capital.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .accordion-item -->
+                            <div class="accordion-item">
+                                <h6 class="accordion-heading collapsed" data-toggle="collapse" data-target="#collapse-1-4">How do I benefit from the ICO Token?</h6>
+                                <div id="collapse-1-4" class="collapse" data-parent="#accordion-1">
+                                    <div class="accordion-content">
+                                        <p>TokenWiz - is unique platform; that is secure, smart and easy-to-use platform, and completely disrupting the way businesses raise capital.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .accordion-item -->
+                        </div><!-- .accordion -->
+                    </div>
+                </div>
+                
+                <pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;accordion&quot; id=&quot;accordion&quot;&gt;
+&nbsp; &nbsp; &lt;div class=&quot;accordion-item&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;h6 class=&quot;accordion-heading&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapse-1-1&quot;&gt; Accordian Title 1&lt;/h6&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;div id=&quot;collapse-1-1&quot; class=&quot;collapse show&quot; data-parent=&quot;#accordion&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;accordion-content&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Accordian content&lt;/p&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &lt;/div&gt;&lt;!-- .accordion-item --&gt;
+&nbsp; &nbsp; &lt;div class=&quot;accordion-item&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;h6 class=&quot;accordion-heading collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapse-1-2&quot;&gt;Accordian Title 2&lt;/h6&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;div id=&quot;collapse-1-2&quot; class=&quot;collapse&quot; data-parent=&quot;#accordion&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;accordion-content&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Accordian content&lt;/p&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &lt;/div&gt;&lt;!-- .accordion-item --&gt;
+&lt;/div&gt;&lt;!-- .accordion --&gt;</pre>
+                <div class="gaps-2x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Accordion S2</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-3x pdb-2-5x">
+                        <div class="accordion accordion-s2" id="accordion-2">
+                            <div class="accordion-item">
+                                <h6 class="accordion-heading" data-toggle="collapse" data-target="#collapse-2-1"> What is TokenWiz?  </h6>
+                                <div id="collapse-2-1" class="collapse show" data-parent="#accordion-2">
+                                    <div class="accordion-content">
+                                        <p>TokenWiz - is unique platform; that is secure, smart and easy-to-use platform, and completely disrupting the way businesses raise capital.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .accordion-item -->
+                            <div class="accordion-item">
+                                <h6 class="accordion-heading collapsed" data-toggle="collapse" data-target="#collapse-2-2">What cryptocurrencies can I use to purchase?</h6>
+                                <div id="collapse-2-2" class="collapse" data-parent="#accordion-2">
+                                    <div class="accordion-content">
+                                        <p>TokenWiz - is unique platform; that is secure, smart and easy-to-use platform, and completely disrupting the way businesses raise capital.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .accordion-item -->
+                            <div class="accordion-item">
+                                <h6 class="accordion-heading collapsed" data-toggle="collapse" data-target="#collapse-2-3">How can I participate in the ICO Token sale?</h6>
+                                <div id="collapse-2-3" class="collapse" data-parent="#accordion-2">
+                                    <div class="accordion-content">
+                                        <p>TokenWiz - is unique platform; that is secure, smart and easy-to-use platform, and completely disrupting the way businesses raise capital.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .accordion-item -->
+                            <div class="accordion-item">
+                                <h6 class="accordion-heading collapsed" data-toggle="collapse" data-target="#collapse-2-4">How do I benefit from the ICO Token?</h6>
+                                <div id="collapse-2-4" class="collapse" data-parent="#accordion-2">
+                                    <div class="accordion-content">
+                                        <p>TokenWiz - is unique platform; that is secure, smart and easy-to-use platform, and completely disrupting the way businesses raise capital.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .accordion-item -->
+                        </div><!-- .accordion -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-innr pdt-2x pdb-2-5x">
+                        <p>Add an extra class called <code> .accordion-s2 </code> with <code> .accordion </code> class for this style.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End #tabsAcc -->
+          <div id="form" class="section">
+                <h2>Form Styles</h2>
+                <div class="gaps-1x"></div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">General Elements</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-3x pdb-3x">
+                        <p>Use <code> .input-bordered </code> class with input element to make it bordered.</p>
+                        <input class="input-bordered" type="text" placeholder="Placeholder Text">
+                        <div class="gaps-2x"></div>
+                        <p>Use <code> .input-textarea </code> as an extra class with your desired input class for textarea. <br> Also you can use <code>.input-textarea-sm</code> as additional class for smaller height.</p>
+                        <textarea class="input-bordered input-textarea" placeholder="Placeholder Text"></textarea>
+                        <div class="gaps-2x"></div>
+                        <p>Default Select Box <code> .input-bordered </code> for styling </p>
+                        <div class="select-wrapper">
+                            <select class="input-bordered">
+                                <option value="option-one">Option One</option>
+                                <option value="option-two">Option Two</option>
+                                <option value="option-three">Option Three</option>
+                            </select>
+                        </div>
+                        <div class="gaps-2x"></div>
+                        <p>Use <code> .select </code> class for initializing select2 jquery plugins. And <code> .select-bordered </code> or  <code> .select-solid </code> for styling </p>
+                        <select class="select select-block select-bordered">
+                            <option value="option-one">Option One</option>
+                            <option value="option-two">Option Two</option>
+                            <option value="option-three">Option Three</option>
+                        </select>
+
+                        <div class="gaps-2x"></div>
+                        <p class="pdb-1x">Use <code> .input-file </code> class with <code> input[type="file] </code> for file upload form. <br> Also you can use <code> .input-file-sm </code> for smaller sized file.</p>
+                        <div class="input-item">
+                            <div class="relative">
+                                <em class="input-file-icon fas fa-upload"></em>
+                                <input type="file" class="input-file" id="file-01">
+                                <label for="file-01">Choose a file</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="gaps-2x"></div>
+                                <p>Use <code> .date-picker </code> class for initializing date picker jquery plugin.</p>
+                                <div class="relative">
+                                    <input class="input-bordered date-picker" value="05/22/2000" type="text" id="date-of-birth" name="date-of-birth">
+                                    <span class="input-icon input-icon-right date-picker-icon"><em class="ti ti-calendar"></em></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="gaps-2x"></div>
+                                <p>Use <code> .time-picker </code> class for initializing date picker jquery plugin.</p>
+                                <div class="relative">
+                                    <input class="input-bordered time-picker" value="12:00" type="text">
+                                    <span class="input-icon input-icon-right time-picker-icon"><em class="ti ti-alarm-clock"></em></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card no-hover-shadow">
+                    <div class="card-head pdl-3x pdt-1-5x">
+                        <h5 class="card-title">Other Elements</h5>
+                    </div>
+                    <div class="sap"></div>
+                    <div class="card-innr pdt-3x pdb-3x">
+                        <p class="pdb-1x">Use <code> .input-checkbox </code> class with <code> input[type="checkbox] </code> for custom styled checkbox. <br> Also you can use <code> .input-checkbox-sm </code> for smaller sized checkbox.</p>
+                        <div class="btn-grp guttar-20px">
+                            <div class="input-item">
+                                <input type="checkbox" class="input-checkbox" id="CheckBox_1">
+                                <label for="CheckBox_1">Default</label>
+                            </div>
+                            <div class="input-item">
+                                <input type="checkbox" class="input-checkbox" id="CheckBox_2" disabled>
+                                <label for="CheckBox_2">Disabled</label>
+                            </div>
+                            <div class="input-item">
+                                <input type="checkbox" class="input-checkbox" id="CheckBox_3" checked>
+                                <label for="CheckBox_3">Checked</label>
+                            </div>
+                            <div class="input-item">
+                                <input type="checkbox" class="input-checkbox" id="CheckBox_4" checked disabled>
+                                <label for="CheckBox_4">Checked Disabled</label>
+                            </div>
+                        </div>
+                        <div class="gaps-2x"></div>
+                        <p class="pdb-1x">Use <code> .input-switch </code> class with <code> input[type="checkbox] </code> for switch style checkbox. <br> Also you can use <code> .input-switch-sm </code> for smaller sized switch.</p>
+                        <div class="btn-grp guttar-20px">
+                            <div class="input-item">
+                                <input type="checkbox" class="input-switch" id="CheckBox_5">
+                                <label for="CheckBox_5">Default</label>
+                            </div>
+                            <div class="input-item">
+                                <input type="checkbox" class="input-switch" id="CheckBox_6" disabled>
+                                <label for="CheckBox_6">Disabled</label>
+                            </div>
+                            <div class="input-item">
+                                <input type="checkbox" class="input-switch" id="CheckBox_7" checked>
+                                <label for="CheckBox_7">Checked</label>
+                            </div>
+                            <div class="input-item">
+                                <input type="checkbox" class="input-switch" id="CheckBox_8" checked disabled>
+                                <label for="CheckBox_8">Checked Disabled</label>
+                            </div>
+                        </div>
+                        <div class="gaps-2x"></div>
+                        <p class="pdb-1x">Use <code> .input-radio </code> class with <code> input[type="radio] </code> for custom styled Radio. <br> Also you can use <code> .input-radio-sm </code> for smaller sized Radio.</p>
+                        <div class="btn-grp guttar-20px">
+                            <div class="input-item">
+                                <input type="radio" class="input-radio" name="example_radio" id="radio_1">
+                                <label for="radio_1">Option 1</label>
+                            </div>
+                            <div class="input-item">
+                                <input type="radio" class="input-radio" name="example_radio" id="radio_2" checked>
+                                <label for="radio_2">Option 2</label>
+                            </div>
+                            <div class="input-item">
+                                <input type="radio" class="input-radio" name="example_radio" id="radio_3">
+                                <label for="radio_3">Option 3</label>
+                            </div>
+                            <div class="input-item">
+                                <input type="radio" class="input-radio" name="example_radio" id="radio_4">
+                                <label for="radio_4">Option 4</label>
+                            </div>
+                        </div>
+                        <div class="gaps-2x"></div>
+                        <p class="pdb-1x">Use <code> .input-switch </code> class with <code> input[type="radio] </code> for switch styled Radio. <br> Also you can use <code> .input-switch-sm </code> for smaller sized switch.</p>
+                        <div class="btn-grp guttar-20px">
+                            <div class="input-item">
+                                <input type="radio" class="input-switch" name="example_switch" id="radio_5">
+                                <label for="radio_5">Switch 1</label>
+                            </div>
+                            <div class="input-item">
+                                <input type="radio" class="input-switch" name="example_switch" id="radio_6" checked>
+                                <label for="radio_6">Switch 2</label>
+                            </div>
+                            <div class="input-item">
+                                <input type="radio" class="input-switch" name="example_switch" id="radio_7">
+                                <label for="radio_7">Switch 3</label>
+                            </div>
+                            <div class="input-item">
+                                <input type="radio" class="input-switch" name="example_switch" id="radio_8">
+                                <label for="radio_8">Switch 4</label>
+                            </div>
+                        </div>                          
+                    </div>
+                </div>
+            </div>
+            <!-- End #input -->
+            <div id="credits" class="section">
+                <h2>Sources and Credits</h2>
+                <div class="gaps-1x"></div>
+                
+                <div class="card no-hover-shadow">
+                    <div class="card-innr pdt-3x pdb-3x">
+                        <ul class="doc-file-list">
+                            <li><a href="https://jquery.com/">jQuery</a></li>
+                            <li><a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery easing</a></li>
+                            <li><a href="http://getbootstrap.com/">BootStrap</a></li>
+                            <li><a href="http://hilios.github.io/jQuery.countdown/">Final CountDown</a></li>
+                            <li><a href="http://dropzonejs.com">DropZone</a></li>
+                            <li><a href="https://github.com/select2/select2">Select 2</a></li>
+                            <li><a href="https://datatables.net/">DataTable</a></li>
+                            <li><a href="https://github.com/uxsolutions/bootstrap-datepicker">DatePicker</a></li>
+                            <li><a href="http://timepicker.co">TimePicker</a></li>
+                            <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a></li>
+                            <li><a href="https://www.chartjs.org/">Chart JS</a></li>
+                            <li><a href="https://cryptofont.com/">Crypto Font</a></li>
+                            <li><a href="https://fonts.google.com/specimen/Roboto">Google Font (Roboto)</a></li>
+                            <li><a href="https://fontawesome.com/">FontAwesome Free</a></li>
+                            <li><a href="https://themify.me/themify-icons">Themify Icons</a></li>
+                            <li><a href="https://github.com/CodeSeven/toastr">Toastr</a></li>
+                            <li><a href="https://sweetalert.js.org/">Sweat Alerts</a></li>
+                            <li><a href="https://jqueryvalidation.org/">jQuery Validation</a></li>
+                            <li><a href="http://www.jquery-steps.com/">jQuery Step</a></li>
+                            <li><a href="https://grsmto.github.io/simplebar/">SimpleBar</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gaps-5x"></div>
+            </div>
+            <!-- End #credits -->
+        </div>
+    </div>
+    
+    <!-- Modal Medium -->
+    <div class="modal fade" id="modalTop" tabindex="-1">
+        <div class="modal-dialog modal-dialog-sm">
+            <div class="modal-content">
+                <a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+                <div class="popup-body">
+                    <h3 class="popup-title">Modal Top</h3>
+                    
+                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+    
+    
+    <!-- Modal Medium -->
+    <div class="modal fade" id="modalCentered" tabindex="-1">
+        <div class="modal-dialog modal-dialog-sm modal-dialog-centered">
+            <div class="modal-content">
+                <a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+                <div class="popup-body">
+                    <h3 class="popup-title">Modal Centered</h3>
+                    
+                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+    
+    
+    <!-- Modal Medium -->
+    <div class="modal fade" id="modalBottom" tabindex="-1">
+        <div class="modal-dialog modal-dialog-sm modal-dialog-bottom">
+            <div class="modal-content">
+                <a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+                <div class="popup-body">
+                    <h3 class="popup-title">Modal Bottom</h3>
+                    
+                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+
+    
+    <!-- Modal Medium -->
+    <div class="modal fade" id="modalSmall" tabindex="-1">
+        <div class="modal-dialog modal-dialog-sm modal-dialog-centered">
+            <div class="modal-content">
+                <a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+                <div class="popup-body">
+                    <h3 class="popup-title">Small Modal</h3>
+                    
+                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+    
+    
+    <!-- Modal Medium -->
+    <div class="modal fade" id="modalMedium" tabindex="-1">
+        <div class="modal-dialog modal-dialog-md modal-dialog-centered">
+            <div class="modal-content">
+                <a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+                <div class="popup-body">
+                    <h3 class="popup-title">Medium Modal</h3>
+                    
+                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                    <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A Collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out.</p>
+                
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+    
+    
+    <!-- Modal Large -->
+    <div class="modal fade" id="modalLarge" tabindex="-1">
+        <div class="modal-dialog modal-dialog-lg modal-dialog-centered">
+            <div class="modal-content">
+                <a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><em class="ti ti-close"></em></a>
+                <div class="popup-body popup-body-lg">
+                    <h3 class="popup-title">Large Modal</h3>
+                    
+                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+                    <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A Collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out.</p>
+                
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    <!-- Modal End -->
+    
+    
+	<!-- JavaScript (include all script here) -->
+	<script src="assets/js/jquery.bundle.js?ver=100"></script>
+	<script src="assets/js/prettify.js"></script> 
+	<script src="assets/js/script.js?ver=100"></script>
+	
+	<script>
+        window.prettyPrint && prettyPrint();
+        
+        $('a.to-section[href*="#"]:not([href="#"])').on("click", function(e) {
+            if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+                var toHash = $(this.hash), toHashN = (this.hash.slice(1)) ? $('[name=' + this.hash.slice(1) + ']') : false, offset = 85;
+
+                toHash = toHash.length ? toHash : toHashN;
+                if (toHash.length) {
+                    $('html, body').animate({
+                        scrollTop: (toHash.offset().top - offset)
+                    }, 1000, "easeInOutExpo");
+                    e.preventDefault();
+                }
+            }
+            var self= $(this);
+            $('.to-section').parent().removeClass('active');
+            self.parent().addClass('active');
+            e.preventDefault();
+        });
+        
+        
+    </script>
+	
+</body>
+</html>

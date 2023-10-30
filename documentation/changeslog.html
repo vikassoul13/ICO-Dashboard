@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Softnio">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Cryptmin is a modern and clean admin template for ICO Dashboard.">
+	<!-- Fav Icon  -->
+	<link rel="shortcut icon" href="images/favicon.png">
+	<!-- Site Title  -->
+	<title>Changes Log | TokenWiz - ICO User Dashboard Admin Template</title>
+	<!-- Vendor Bundle CSS -->
+	<link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=100">
+	<link rel="stylesheet" href="assets/css/prettify.css">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="assets/css/style.css?ver=100">
+
+	<style>
+        .section{
+            padding: 20px 0 0;
+        }
+        a{
+            color: #304073;
+        }
+        a:hover,a:focus,a:active{
+            color: #2b56f5;
+        }
+        h1,h2,h3,h4,h5,h6,p.lead{
+            color: #304073;
+            margin-bottom: 8px;
+        }
+        p,span{
+            color: #6783b8;
+        }
+        .doc-topbar{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+            padding: 10px 0;
+            background: #fff;
+            box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.02);
+        }
+        .doc-logo{
+            height: 40px;
+            display: block;
+        }
+        .doc-logo img{
+            height: 40px;
+        }
+        .doc-topbar-info ul{}
+        .doc-topbar-info ul li{
+            font-size: 13px;
+        }
+        .doc-sidebar{
+            position: fixed;
+            top: 0;
+            width: 260px;
+            border-radius: 4px;
+            padding: 15px 0;
+            margin-top: 90px;
+            background: #fff;
+            max-height: calc(100vh - 120px);
+            box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.07);
+        }
+        .doc-sidebar-head{
+            color: #304073;
+            margin:15px 0 5px;
+            padding: 0 20px;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .doc-sidebar-nav{
+            padding: 0 20px;
+        }
+        .doc-sidebar-nav li{
+            padding: 5px 0;
+        }
+        .doc-sidebar-nav li a{
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.01em;
+            font-weight: 400;
+            color: #6783b8;
+            display: block;
+        }
+        .doc-sidebar-nav li a:hover,.doc-sidebar-nav li a:focus,.doc-sidebar-nav li a:active,.doc-sidebar-nav li.active a{
+            color: #2b56f5;
+        }
+        .doc-content{
+            margin-left: 310px;
+        }
+        .doc-content{
+        }
+        .doc-file-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .doc-file-list li{
+            font-weight: 400;
+            width: 33.33%;
+        }
+        ol li{
+            list-style: decimal;
+        }
+        .doc-ol li{
+            list-style-position: inside;
+            font-weight: 400;
+        }
+        .lang-html,.lang-css,.lang-js{
+            overflow-x: hidden;
+        }
+        
+        /*Log Page*/
+        .log-date{
+            font-size: 12px;
+            color: #9eaecf;
+        }
+        .log-version{
+            margin-bottom: 0;
+        }
+        .log-list{
+            padding-top: 8px;
+        }
+        .log-list li{
+            list-style: disc;
+            list-style-position: inside;
+            font-size: 13px;
+        }
+    </style>
+	
+</head>
+
+<body class="admin-dashboard-demo" data-spy="scroll" data-offset="0" data-target="#docSidebar">
+    
+    <div class="doc-topbar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="div">
+                    <a class="doc-logo" href="./"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="doc-topbar-info d-none d-md-block">
+                    <ul class="d-flex guttar-15px align-items-center">
+                        <li>Version: <strong>1.0.4</strong></li>
+                        <li>Updated: 03/13/2019</li>
+                        <li>By: <a href="https://softnio.com" target="_blank">Softnio</a></li>
+                        <li><a target="_blank" href="http://demo.themenio.com/tokenwiz/" class="btn btn-sm btn-primary">Demo Preview</a></li>
+                    </ul>
+                </div>
+                <div class="d-md-none">
+                    <a href="#" class="doc-menu-toggler"><em class="ti ti-align-right"></em></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="docSidebar" class="doc-sidebar">
+            <div>
+                <ul class="doc-sidebar-nav">
+                    <li><a class="to-section" href="index.html#introduction">Introduction</a></li>
+                    <li><a class="to-section" href="index.html#getStarted">Geting Started</a></li>
+                    <li><a class="to-section" href="index.html#htmlStructure">HTML Files &amp; Structure</a></li>
+                    <li><a class="to-section" href="index.html#cssStructure">CSS Files &amp; Structure</a></li>
+                    <li><a class="to-section" href="index.html#jsStructure">JavaScript Files &amp; Structure</a></li>
+                </ul>
+                <h5 class="doc-sidebar-head">Elements</h5>
+                <ul class="doc-sidebar-nav">
+                    <li><a class="to-section" href="index.html#buttons">Buttons</a></li>
+                    <li><a class="to-section" href="index.html#typography">Typography</a></li>
+                    <li><a class="to-section" href="index.html#utility">Utility Classes</a></li>
+                    <li><a class="to-section" href="index.html#tables">Tables</a></li>
+                    <li><a class="to-section" href="index.html#modals">Modal</a></li>
+                    <li><a class="to-section" href="index.html#alerts">Alert</a></li>
+                    <li><a class="to-section" href="index.html#tabsAcc">Tabs &amp; Accordions</a></li>
+                    <li><a class="to-section" href="index.html#form">Form Styles</a></li>
+                </ul>
+                <ul class="doc-sidebar-nav">
+                    <li><a class="to-section" href="index.html#credits">Sources and Credits</a></li>
+                    <li><a href="changeslog.html">Changes Log</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="doc-content">
+            <div id="log" class="section">
+               <div class="gaps-9x"></div>
+                <h2>Changes Log</h2>
+                <div class="gaps-2x"></div>
+                <h5 class="log-version">v1.0.4</h5>
+                <span class="log-date">03/13/2019</span>
+                <ul class="log-list">
+                    <li>Minor style issues fix</li>
+                    <li>Simplebar custom scroll added</li>
+                    <li>5 New html file/page Added<br>
+                        - index-v2.html<br>
+                        - chat.html<br>
+                        - timeline.html<br>
+                        - activity.html<br>
+                        - user-list-sidebar.html<br>
+                    </li>
+                </ul>
+                <div class="gaps-3x"></div>
+                <h5 class="log-version">v1.0.3</h5>
+                <span class="log-date">11/30/2018</span>
+                <ul class="log-list">
+                    <li>SweatAlert added</li>
+                    <li>Form Validation added</li>
+                    <li>Form Wizard added</li>
+                    <li>5 New html file/page Added<br>
+                        - cards.html<br>
+                        - alert-sweat.html<br>
+                        - thank-you.html<br>
+                        - form-validation.html<br>
+                        - form-wizard.html<br>
+                    </li>
+                </ul>
+                <div class="gaps-3x"></div>
+                <h5 class="log-version">v1.0.2</h5>
+                <span class="log-date">11/27/2018</span>
+                <ul class="log-list">
+                    <li>Toastr Alert added</li>
+                    <li>16 New html file/page added<br>
+                        - buy-token-s2.html <br>
+                        - kyc-details.html <br>
+                        - user-details.html <br>
+                        - regular-page-v2.html <br>
+                        - email-templates.html <br>
+                        - email-verified.html <br>
+                        - signup-success.html <br>
+                        - buttons.html <br>
+                        - badges.html <br>
+                        - accordions.html <br>
+                        - alert.html <br>
+                        - alert-toastr.html <br>
+                        - form-elements.html <br>
+                        - form-layout.html <br>
+                        - modals.html <br>
+                        - tabs.html <br>
+                    </li>
+                </ul>
+                <div class="gaps-3x"></div>
+                <h5 class="log-version">v1.0.1</h5>
+                <span class="log-date">11/23/2018</span>
+                <ul class="log-list">
+                    <li>5 New Color Preset Added <a class="link" href="index.html#color-preset">( How to Use )</a><br>
+                        @ Violet<br>
+                        @ Charcoal<br>
+                        @ Green<br>
+                        @ Pigeon<br>
+                        @ Purple<br>
+                    </li>
+                    <li>Email Template Included in Package <strong>(Bonus)</strong></li>
+                </ul>
+                <div class="gaps-3x"></div>
+                <h5 class="log-version">v1.0.0</h5>
+                <span class="log-date">11/22/2018</span>
+                <ul class="log-list">
+                    <li>Initial Release</li>
+                </ul>
+                <div class="gaps-5x"></div>
+            </div>
+            <!-- End #credits -->
+        </div>
+    </div>
+    
+	<!-- JavaScript (include all script here) -->
+	<script src="assets/js/jquery.bundle.js?ver=100"></script>
+	<script src="assets/js/prettify.js"></script> 
+	<script src="assets/js/chart.init.js?ver=100"></script>
+	<script src="assets/js/script.js?ver=100"></script>
+	
+	<script>
+        window.prettyPrint && prettyPrint();
+    </script>
+
+</body>
+</html>
